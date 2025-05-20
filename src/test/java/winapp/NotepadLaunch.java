@@ -26,7 +26,7 @@ public class NotepadLaunch {
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("app", "C:\\Windows\\System32\\notepad.exe");
 		caps.setCapability("platformName", "Windows");
-        caps.setCapability("deviceName", "WindowsPC");
+                caps.setCapability("deviceName", "WindowsPC");
 
 		driver = new WindowsDriver(new URL("http://127.0.0.1:4723"),caps);
 		System.out.println(driver.getSessionId());
@@ -54,7 +54,7 @@ public class NotepadLaunch {
 		captureScreenshot("Step6-Saving the File with Name");
 
 		String userHome = System.getProperty("user.home");
-	    File savedFile = new File(userHome + "\\Desktop\\New File.txt");
+	        File savedFile = new File(userHome + "\\Desktop\\New File.txt");
 
 	    if (savedFile.exists()) {
 	        System.out.println(" File successfully saved: " + savedFile.getAbsolutePath());
