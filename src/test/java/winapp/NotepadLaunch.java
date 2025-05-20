@@ -30,7 +30,7 @@ public class NotepadLaunch {
 
 		driver = new WindowsDriver(new URL("http://127.0.0.1:4723"),caps);
 		System.out.println(driver.getSessionId());
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		captureScreenshot("Step1-Launching Notepad");
 	}
 		public void captureScreenshot(String fileName) {
